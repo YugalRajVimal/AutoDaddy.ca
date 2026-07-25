@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autodaddy</title>
+
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css?v=1.5">
+</head>
+
+<body>
+
+    <div class="maintagline"><span id="HomeLine">Ask a question - Oil change Service due on... find best Tire
+            deals...Tow service or Car detailing etc. “A.I - that helps itself</span><i class="fas fa-pencil-alt"></i>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="autodaddy-logo.png" alt="GIS Portal">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end shadow-sm border-0" aria-labelledby="pagesDropdown"
+                            style="border-radius: 12px; margin-top: 10px;">
+                            <li><a class="dropdown-item py-2" href="privacy-policy.html"><i
+                                        class="fas fa-shield-alt text-sky w-20px me-2 text-center"></i>Privacy
+                                    Policy</a></li>
+                            <li><a class="dropdown-item py-2" href="terms-of-use.html"><i
+                                        class="fas fa-file-contract text-sky w-20px me-2 text-center"></i>Terms of
+                                    Use</a>
+                            </li>
+                            <li><a class="dropdown-item py-2" href="faq.html"><i
+                                        class="fas fa-question-circle text-sky w-20px me-2 text-center"></i>FAQ</a></li>
+                            <li><a class="dropdown-item py-2" href="contact-us.html"><i
+                                        class="fas fa-envelope text-sky w-20px me-2 text-center"></i>Contact Us</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="btn btn-light text-sky fw-bold btn-sm px-4 rounded-pill shadow-sm" href="#">
+                            <i class="fas fa-sign-in-alt me-2"></i>Login
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h1 class="display-6 fw-bold mb-4" style="min-height: 100px;">
+                        Smart System to track <br>
+                        <span class="text-gradient" style="font-size: 34px;" id="heroTypingText">Real time data of your
+                            Vehicle</span>
+                    </h1>
+                    <p class="lead mb-4 text-muted">
+                        Find nearby and trusted repair shop options, find deals on new tyres for my car or manage
+                        multiple vehicles effortless and Access all information about your vehicle with combination of
+                        A.I driven technology
+                    </p>
+                    <form action="login.html" class="d-flex flex-column flex-sm-row gap-2 mt-4"
+                        style="max-width: 480px;">
+                        <div class="position-relative flex-grow-1">
+                            <i class="fas fa-mobile-alt position-absolute text-sky"
+                                style="top: 50%; left: 1.2rem; transform: translateY(-50%); font-size: 1.2rem;"></i>
+                            <input type="tel" class="form-control form-control-lg w-100 shadow-sm"
+                                style="padding-left: 3rem;" placeholder="Enter mobile number" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg px-4 shadow-sm text-nowrap">
+                            Get Started <i class="fas fa-arrow-right ms-2"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="hero-image-container text-center">
+                        <img src="home-banner-main.png" alt="AutoDaddy Software Platform" class="img-fluid"
+                            style="mix-blend-mode: multiply; transform: scale(1.15);">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Animated Background -->
+        <div class="hero-bg-animation">
+            <div class="circle-1"></div>
+            <div class="circle-2"></div>
+            <div class="circle-3"></div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5 section-features">
+        <div class="section-bg-icons section-bg-icons--features" aria-hidden="true">
+            <i class="fas fa-car"></i><i class="fas fa-wrench"></i><i class="fas fa-oil-can"></i><i
+                class="fas fa-gas-pump"></i><i class="fas fa-cogs"></i><i class="fas fa-tachometer-alt"></i>
+            <i class="fas fa-car"></i><i class="fas fa-wrench"></i><i class="fas fa-oil-can"></i><i
+                class="fas fa-gas-pump"></i><i class="fas fa-cogs"></i><i class="fas fa-tachometer-alt"></i>
+            <i class="fas fa-car"></i><i class="fas fa-wrench"></i><i class="fas fa-oil-can"></i><i
+                class="fas fa-gas-pump"></i><i class="fas fa-cogs"></i><i class="fas fa-tachometer-alt"></i>
+        </div>
+        <div class="container position-relative">
+
+            <div class="row g-4 mb-5 justify-content-center">
+                <div class="col-md-5" data-aos="fade-up" data-aos-delay="100">
+                    <div class="about-feature h-100 text-start position-relative overflow-hidden"
+                        style="border-top: 4px solid #0ea5e9;">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="bg-sky bg-opacity-10 text-sky rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0"
+                                style="width: 54px; height: 54px;">
+                                <i class="fas fa-bullseye fa-xl"></i>
+                            </div>
+                            <h5 class="fw-bold mb-0">Mission Statement</h5>
+                        </div>
+                        <p class="text-muted small mb-0 lh-lg">No more confusion. No more lost service records. Just
+                            drive with
+                            confidence. AUTODADDY – the system that simplifies car care</p>
+                    </div>
+                </div>
+                <div class="col-md-5" data-aos="fade-up" data-aos-delay="200">
+                    <div class="about-feature h-100 text-start position-relative overflow-hidden"
+                        style="border-top: 4px solid #0ea5e9;">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="bg-sky bg-opacity-10 text-sky rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0"
+                                style="width: 54px; height: 54px;">
+                                <i class="fas fa-eye fa-xl"></i>
+                            </div>
+                            <h5 class="fw-bold mb-0">VISION</h5>
+                        </div>
+                        <p class="text-muted small mb-0 lh-lg">Everyone has 24 hours in a day, but very few have the
+                            passion to set
+                            it right.” Drive Confident. We Handle the Rest</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-7 fw-bold mb-3">Autodaddy - A name of Promise</h2>
+                <p class="lead text-muted">means... Less Stress- more freedom</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Feature 1 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-card">
+                        <div class="feature-icon bg-gradient-sky">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h4 class="fw-bold mt-4 mb-3">Find Repair shop</h4>
+                        <p class="text-muted">Locate certified and highly-rated auto repair facilities in your vicinity
+                            for reliable, top-tier automotive maintenance.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-card">
+                        <div class="feature-icon bg-gradient-sky">
+                            <i class="fas fa-tags"></i>
+                        </div>
+                        <h4 class="fw-bold mt-4 mb-3">Find Tires and deals</h4>
+                        <p class="text-muted">Discover premium tire options and exclusive promotional deals to ensure
+                            optimal road safety and performance.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-card">
+                        <div class="feature-icon bg-gradient-sky">
+                            <i class="fas fa-spray-can"></i>
+                        </div>
+                        <h4 class="fw-bold mt-4 mb-3">Car Detailing presto</h4>
+                        <p class="text-muted">Easily schedule professional car detailing services to maintain your
+                            vehicle's aesthetic appeal and pristine condition.</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us / Data & Methodology -->
+    <section id="why-us" class="py-5 section-why-us">
+        <div class="section-bg-icons section-bg-icons--why" aria-hidden="true">
+            <i class="fas fa-clipboard-list"></i><i class="fas fa-tools"></i><i class="fas fa-map-marked-alt"></i><i
+                class="fas fa-shield-alt"></i><i class="fas fa-car-side"></i><i class="fas fa-check-circle"></i>
+            <i class="fas fa-clipboard-list"></i><i class="fas fa-tools"></i><i class="fas fa-map-marked-alt"></i><i
+                class="fas fa-shield-alt"></i><i class="fas fa-car-side"></i><i class="fas fa-check-circle"></i>
+            <i class="fas fa-clipboard-list"></i><i class="fas fa-tools"></i><i class="fas fa-map-marked-alt"></i><i
+                class="fas fa-shield-alt"></i><i class="fas fa-car-side"></i><i class="fas fa-check-circle"></i>
+        </div>
+        <div class="container position-relative">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-7 fw-bold mb-2">A commitment that matters...</h2>
+              <h4 class="fw-bold mb-2 text-gradient">Just take a bold step... you would never
+                    regret it ...</h4>
+                <p class="lead text-muted">Built for accuracy, transparency and advanced use</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="why-card text-center">
+                        <div class="why-icon mx-auto"><i class="fas fa-calendar-check"></i></div>
+                        <h5 class="fw-bold mt-3 mb-2">Access of next due service</h5>
+                        <p class="text-muted small mb-0">Never guess again. Our system proactively monitors your vehicle's health and Service intervals, sending you precise alerts before a minor issue becomes a major expense.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="why-card text-center">
+                        <div class="why-icon mx-auto"><i class="fas fa-clipboard-check"></i></div>
+                        <h5 class="fw-bold mt-3 mb-2">Proven Methodology</h5>
+                        <p class="text-muted small mb-0">We've replaced "unplanned" chaos with a systematic approach. Our workflow is designed by automotive experts to ensure every service is recorded, verified, and valuable for your vehicle's resale.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="why-card text-center">
+                        <div class="why-icon mx-auto"><i class="fas fa-microchip"></i></div>
+                        <h5 class="fw-bold mt-3 mb-2">Advanced Software</h5>
+                        <p class="text-muted small mb-0">Experience a system  that "helps itself". Our cloud-based software uses intelligent data tracking to manage your vehicle or shop with zero complexity and maximum speed.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="why-card text-center">
+                        <div class="why-icon mx-auto"><i class="fas fa-shield-alt"></i></div>
+                        <h5 class="fw-bold mt-3 mb-2">Secure &amp; Reliable</h5>
+                        <p class="text-muted small mb-0">Your data is asset. We use bank-level security and local Canadian hosting to ensure your records are private, protected, and accessible 24/7- whenever and wherever you need them.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+      <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 text-center" data-aos="fade-right">
+                    <img src="about-banner-new-1.png" alt="AutoDaddy Mobile App" class="img-fluid mb-4"
+                        style="max-width: 400px;">
+                    
+                </div>
+                <div class="col-md-7" data-aos="fade-left">
+                     <h2 class="display-7 fw-bold mb-4"><span class="text-gradient">From Trash to Cash:</span> Sell Across Canada!</h2>
+                   
+                    <p class="lead text-muted mb-4">
+                        <b>Turn your sitting inventory into active revenue</b>
+                    </p>
+                    <p class="text-muted mb-4">
+                        List your stock of old or new parts in the autodaddy National Deals section today.
+                    </p>
+
+                    <p class="text-muted mb-4">
+                        We leverage your shop's presence to cover the market from local to national in seconds—with no extra charges
+                    </p>
+                  
+                    <p class="text-muted mb-4">
+                        Don't let parts collect dust. Let them collect profit.
+                    </p>
+                  
+                    <p class="text-muted mb-4">
+                      Join the National Network:👉 <span class="text-gradient">autodaddy.ca</span>
+                    </p>
+                  
+                  
+                </div>
+              
+              <div class="col-md-12" data-aos="fade-left"><p class="text-center m-0" style="font-style: italic;
+    font-weight: bold;color: green;">with Autodaddy, you are not just choosing a system - you're choosing a standard of excellence</p></div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Platform Capabilities -->
+    <section id="capabilities" class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-7 fw-bold mb-3">Platform Capabilities</h2>
+                <p class="lead text-white-50">Where Possibilities begin... Connect and Correcte</p>
+            </div>
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-3 col-md-4 col-6 text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="tech-box">
+                        <i class="fas fa-file-invoice fa-3x mb-3 text-sky"></i>
+                        <h6 class="fw-bold">Digital Service History</h6>
+                        <p class="text-white-50 small mb-0">Maintain a comprehensive, digitized log of your vehicle's
+                            complete service history, including mileage and detailed workshop notes.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 text-center" data-aos="fade-up" data-aos-delay="150">
+                    <div class="tech-box">
+                        <i class="fas fa-tags fa-3x mb-3 text-sky"></i>
+                        <h6 class="fw-bold">Exclusive Loacal Deals</h6>
+                        <p class="text-white-50 small mb-0">Unlock exclusive, verified promotions and seasonal discounts
+                            from our trusted network of automotive service partners.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="tech-box">
+                        <i class="fas fa-map-marked-alt fa-3x mb-3 text-sky"></i>
+                        <h6 class="fw-bold">Precision Shop Mapping</h6>
+                        <p class="text-white-50 small mb-0">Navigate seamlessly to highly-rated, authorized repair
+                            centers utilizing our integrated, real-time geolocation mapping system.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 text-center" data-aos="fade-up" data-aos-delay="250">
+                    <div class="tech-box">
+                        <i class="fas fa-truck-pickup fa-3x mb-3 text-sky"></i>
+                        <h6 class="fw-bold">Access Tow services</h6>
+                        <p class="text-white-50 small mb-0">Instantly dispatch emergency roadside assistance and
+                            reliable towing services directly to your precise GPS location.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="tech-box">
+                        <i class="fas fa-soap fa-3x mb-3 text-sky"></i>
+                        <h6 class="fw-bold">Access Washing and Detailing Presto</h6>
+                        <p class="text-white-50 small mb-0">Conveniently book premium car washing and comprehensive
+                            detailing packages, available with flexible doorstep service options.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 text-center" data-aos="fade-up" data-aos-delay="350">
+                    <div class="tech-box">
+                        <i class="fas fa-cog fa-3x mb-3 text-sky"></i>
+                        <h6 class="fw-bold">Access Tire deals</h6>
+                        <p class="text-white-50 small mb-0">Effortlessly compare top tire brands, competitive pricing,
+                            and limited-time offers to make informed purchasing decisions.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 text-center" data-aos="fade-up" data-aos-delay="400">
+                    <div class="tech-box">
+                        <i class="fas fa-car-crash fa-3x mb-3 text-sky"></i>
+                        <h6 class="fw-bold">Excess Autobody Network</h6>
+                        <p class="text-white-50 small mb-0">Locate specialized autobody experts in your area for
+                            flawless dent removal, premium paint matching, and collision restoration.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 text-center" data-aos="fade-up" data-aos-delay="450">
+                    <div class="tech-box">
+                        <i class="fas fa-file-invoice-dollar fa-3x mb-3 text-sky"></i>
+                        <h6 class="fw-bold">Digital Invoicing</h6>
+                        <p class="text-white-50 small mb-0">Generate transparent, detailed invoices and securely
+                            download standardized, payment-ready financial records on demand.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 text-center" data-aos="fade-right">
+                    <img src="about-banner-new.png" alt="AutoDaddy Mobile App" class="img-fluid mb-4"
+                        style="max-width: 400px;">
+                    <h5 class="fw-bold mb-3">Download AutoDaddy App</h5>
+                    <div class="d-flex justify-content-center gap-3 flex-wrap">
+                        <a href="#" class="btn btn-dark btn-lg d-flex align-items-center shadow-sm">
+                            <i class="fas fa-user-circle fa-2x me-2 text-sky"></i>
+                            <div class="text-start">
+                                <small class="d-block" style="font-size: 0.7rem; line-height: 1;">Get it for</small>
+                                <span class="fw-bold">Customers</span>
+                            </div>
+                        </a>
+                        <a href="#" class="btn btn-outline-sky btn-lg d-flex align-items-center shadow-sm">
+                            <i class="fas fa-store fa-2x me-2"></i>
+                            <div class="text-start">
+                                <small class="d-block" style="font-size: 0.7rem; line-height: 1;">Get it for</small>
+                                <span class="fw-bold">Shop Owners</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-7" data-aos="fade-left">
+                    <h2 class="display-7 fw-bold mb-4">About Us</h2>
+                    <p class="lead text-muted mb-4">
+                        Thanks for downloading the app. Auto daddy was created with a simple belief: <b>Your vehicle is
+                            your most trusted partner</b>
+                    </p>
+                    <p class="text-muted mb-4">
+                        In today’s busy life, managing multiple vehicles and remembering service dates, repairs, and
+                        expenses become difficult.
+                    </p>
+
+                    <p class="text-muted mb-4">
+                        Auto Daddy simplifies this process by giving car owners clear,recognized, and instant access to
+                        their vehicle information all in one place From service history to repair records, tow to
+                        detailing, everything related to your vehicle is easy to track only for you with a simple click.
+                    </p>
+
+                    <p class="text-muted fw-bold mb-2">Everyone has its own why. Let us explore : why Auto Daddy?</p>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-check-circle text-sky me-2"></i>Access all information
+                            about repair records of your vehicle.</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-sky me-2"></i>Find nearby and reliable
+                            repair shops.</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-sky me-2"></i>Combination of smart
+                            technology and A.I driven support.</li>
+                    </ul>
+
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+  
+  <section style="background: #5ff95f;
+    font-style: italic;
+    padding: 10px 0 0; font-weight: bold;">
+    <div class="row">
+      <div class="col-12"> <p class="text-center">We don't just track data - we honor the promise of a safer, more reliable drive for every Canadian</p></div>
+    </div>
+    </section>
+
+    <!-- Footer (Useful Links | Features | Content) -->
+    <footer class="footer bg-dark text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4 g-lg-5">
+                <!-- Useful Links (same as top menu) -->
+                <div class="col-lg-3">
+                    <h5 class="footer-title mb-4">Useful Links</h5>
+                    <ul class="footer-list">
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+                <!-- Features (2 columns) -->
+                <div class="col-lg-5">
+                    <h5 class="footer-title mb-4">Pages</h5>
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <ul class="footer-list">
+                                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                                <li><a href="terms-of-use.html">Terms of Service</a></li>
+                                <li><a href="faq.html">FAQ</a></li>
+                                <li><a href="delete-account.html">Delete Account</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul class="footer-list">
+                                <li><a href="#features"><i class="fas fa-globe me-2 text-sky"></i>www.autodaddy.ca</a>
+                                </li>
+                                <li><a href="#features"><i
+                                            class="fas fa-envelope me-2 text-sky"></i>info@autodaddy.ca</a></li>
+                                <li><a href="#features"><i class="fas fa-phone-alt me-2 text-sky"></i>+1
+                                        705 991 3785</a></li>
+                                <li><a href="delete-account.html"><i class="fas fa-user-times me-2 text-sky"></i>Delete Account</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Content (developed by) -->
+                <div class="col-lg-4">
+                    <p class="footer-content mb-3">
+                        This platform is designed, developed and hosted by <a href="#" class="footer-link">autodaddy</a>. We do not provide repair services.
+                    </p>
+                    <div class="footer-icons d-flex flex-wrap gap-3 align-items-center mb-3">
+                        <div class="footer-icon-box" title="Repairs"><i class="fas fa-tools text-sky"></i></div>
+                        <div class="footer-icon-box" title="Towing"><i class="fas fa-truck-pickup text-sky"></i>
+                        </div>
+                        <div class="footer-icon-box" title="Detailing"><i class="fas fa-spray-can text-sky"></i>
+                        </div>
+                        <div class="footer-icon-box" title="Deals"><i class="fas fa-tags text-sky"></i></div>
+                    </div>
+                    <p class="footer-copy mb-3">&copy; 2026 autodaddy all rights reserved.</p>
+                    <p class="footer-delete-account mb-0">
+                        <a href="delete-account.html" class="footer-link text-danger">Delete Account</a>
+                    </p>
+                </div>
+            </div>
+            <hr class="footer-hr my-1">
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+    <script>
+        autoType('HomeLine');
+
+        const heroTexts = [
+            "Real time data of your Vehicle",
+            "Smart reminders for your next due service",
+            "Instant access to trusted repair shops near by",
+            "Detailed Reports on every dollar spent on your Car",
+			"Manage multiple vehicles effortlessly in one place"
+        ];
+        autoTypeMultiple('heroTypingText', heroTexts);
+
+        function autoTypeMultiple(Id, textArray) {
+            const typingElement = document.getElementById(Id);
+            if (!typingElement) return;
+            typingElement.textContent = '';
+            let textIndex = 0;
+            let charIndex = 0;
+            let isDeleting = false;
+
+            function type() {
+                const currentText = textArray[textIndex];
+
+                if (isDeleting) {
+                    if (charIndex >= 0) {
+                        typingElement.textContent = currentText.substring(0, charIndex);
+                        charIndex--;
+                        setTimeout(type, 40);
+                    } else {
+                        isDeleting = false;
+                        textIndex = (textIndex + 1) % textArray.length;
+                        setTimeout(type, 500);
+                    }
+                } else {
+                    if (charIndex < currentText.length) {
+                        typingElement.textContent += currentText.charAt(charIndex);
+                        charIndex++;
+                        setTimeout(type, 70);
+                    } else {
+                        isDeleting = true;
+                        setTimeout(type, 2000);
+                    }
+                }
+            }
+            type();
+        }
+
+        function autoType(Id) {
+            const typingElement = document.getElementById(Id);
+            const text = typingElement.innerText;
+            typingElement.textContent = '';
+            let index = 0;
+            let isDeleting = false;
+            function type() {
+                if (isDeleting) {
+                    if (index >= 0) {
+                        typingElement.textContent = text.substring(0, index);
+                        index--;
+                        setTimeout(type, 50);
+                    } else {
+                        isDeleting = false;
+                        setTimeout(type, 500);
+                    }
+                } else {
+                    if (index < text.length) {
+                        typingElement.textContent += text.charAt(index);
+                        index++;
+                        setTimeout(type, 100);
+                    } else {
+                        isDeleting = true;
+                        setTimeout(type, 2000);
+                    }
+                }
+            }
+            type();
+        }
+    </script>
+</body>
+
+</html>

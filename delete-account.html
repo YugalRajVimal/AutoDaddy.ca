@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Account - Autodaddy</title>
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css?v=1.5">
+    <style>
+        .delete-icon-circle {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background: rgba(239, 68, 68, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem auto;
+        }
+        .delete-icon-circle i {
+            font-size: 2.5rem;
+            color: #ef4444;
+        }
+        .company-info-box {
+            background: #f8fbff;
+            border: 1px solid #e0f0ff;
+            border-radius: 16px;
+            padding: 1.75rem;
+        }
+        .company-info-box img {
+            max-width: 200px;
+        }
+        .company-info-list li {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 0.85rem;
+            color: #4b5563;
+            font-size: 0.95rem;
+        }
+        .company-info-list i {
+            color: var(--primary-color, #0ea5e9);
+            width: 18px;
+            text-align: center;
+        }
+        /* Fake toast */
+        #deleteToastContainer {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 2000;
+        }
+        .warning-note {
+            background: rgba(245, 158, 11, 0.08);
+            border-left: 4px solid #f59e0b;
+            border-radius: 8px;
+            padding: 1rem 1.25rem;
+            font-size: 0.9rem;
+            color: #92400e;
+        }
+    </style>
+</head>
+<body class="bg-light d-flex flex-column min-vh-100">
+    <div class="maintagline"><span id="HomeLine">Ask a question - Oil change Service due on... find best Tire deals...Tow service or Car detailing etc. “A.I - that helps itself</span><i class="fas fa-pencil-alt"></i></div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-fixed-top scrolled" id="mainNav" style="background: linear-gradient(135deg, rgba(14, 165, 233, 0.98) 0%, rgba(2, 132, 199, 0.98) 100%);">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="autodaddy-logo.png" alt="GIS Portal" style="max-width: 240px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="pagesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+                        <ul class="dropdown-menu dropdown-menu-end shadow-sm border-0" aria-labelledby="pagesDropdown" style="border-radius: 12px; margin-top: 10px;">
+                            <li><a class="dropdown-item py-2" href="privacy-policy.html"><i class="fas fa-shield-alt text-sky w-20px me-2 text-center"></i>Privacy Policy</a></li>
+                            <li><a class="dropdown-item py-2" href="terms-of-use.html"><i class="fas fa-file-contract text-sky w-20px me-2 text-center"></i>Terms of Use</a></li>
+                            <li><a class="dropdown-item py-2" href="faq.html"><i class="fas fa-question-circle text-sky w-20px me-2 text-center"></i>FAQ</a></li>
+                            <li><a class="dropdown-item py-2" href="contact-us.html"><i class="fas fa-envelope text-sky w-20px me-2 text-center"></i>Contact Us</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item py-2 active" href="delete-account.html"><i class="fas fa-user-slash text-sky w-20px me-2 text-center"></i>Delete Account</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="btn btn-light text-sky fw-bold btn-sm px-4 rounded-pill shadow-sm" href="#">
+                            <i class="fas fa-sign-in-alt me-2"></i>Login
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Professional Hero Banner -->
+    <section class="inner-hero-section" style="background: linear-gradient(135deg, #f0f8ff 0%, #e0f0ff 100%); padding: 140px 0 100px 0;">
+        <div class="hero-bg-animation">
+            <div class="circle-1" style="background: rgba(14, 165, 233, 0.15);"></div>
+            <div class="circle-2" style="background: rgba(14, 165, 233, 0.15);"></div>
+            <div class="circle-3" style="background: rgba(14, 165, 233, 0.15);"></div>
+        </div>
+        <div class="container position-relative z-index-1 text-center">
+            <h1 class="display-4 fw-bold text-dark mb-3">Delete Account</h1>
+            <p class="lead text-muted mb-10">We're sorry to see you go. Submit a request below.</p>
+        </div>
+        <div class="card border-0 shadow-lg overflow-hidden rounded-4 mt-n5 container flex-grow-1" style="z-index: 10; position: relative; max-width: 900px; padding-bottom: 80px;">
+  
+            <div class="p-5">
+                <div class="text-center">
+                    <div class="delete-icon-circle">
+                        <i class="fas fa-user-slash"></i>
+                    </div>
+                    <h3 class="fw-bold text-dark mb-2">Request Account Deletion</h3>
+                    <p class="text-muted mb-4">Enter the email address associated with your Auto Daddy account. Our team will process your request and permanently remove your data in accordance with our Privacy Policy.</p>
+                </div>
+
+                <form id="deleteAccountForm" class="mx-auto" style="max-width: 460px;" novalidate>
+                    <div class="form-floating mb-4">
+                        <input type="email" class="form-control" id="deleteEmail" placeholder="name@example.com" required>
+                        <label for="deleteEmail">Registered Email Address</label>
+                        <div class="invalid-feedback">Please enter a valid email address.</div>
+                    </div>
+
+                    <div class="warning-note mb-4">
+                        <i class="fas fa-exclamation-triangle me-2"></i>
+                        This action is permanent. All vehicle records, service history, and account data will be deleted and cannot be recovered.
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-danger btn-lg px-5 py-3 rounded-pill fw-bold shadow-sm">
+                            Submit Deletion Request <i class="fas fa-trash-alt ms-2"></i>
+                        </button>
+                    </div>
+                </form>
+
+                <hr class="my-5">
+
+                <!-- Company Info -->
+                <div class="company-info-box text-center">
+                    <img src="autodaddy-logo.png" alt="Auto Daddy Logo" class="mb-3">
+                    <p class="text-muted mb-4">If you have any questions before deleting your account, our team is happy to help.</p>
+                    <ul class="list-unstyled company-info-list d-inline-block text-start mb-0">
+                        <li><i class="fas fa-envelope"></i> info@autodaddy.ca</li>
+                        <li><i class="fas fa-phone-alt"></i> +1 705 991 3785</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Auto Avenue, Toronto, ON, Canada</li>
+                        <li><i class="fas fa-globe"></i> www.autodaddy.ca</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Fake Toast -->
+    <div id="deleteToastContainer">
+        <div id="deleteToast" class="toast align-items-center text-white bg-success border-0 shadow-lg" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body">
+                    <i class="fas fa-check-circle me-2"></i>
+                    Your deletion request has been submitted successfully.
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white pt-5 pb-3 mt-auto">
+        <div class="container">
+            <div class="row g-4 g-lg-5">
+                <!-- Useful Links -->
+                <div class="col-lg-3">
+                    <h5 class="footer-title mb-4">Useful Links</h5>
+                    <ul class="footer-list">
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                    </ul>
+                </div>
+                <!-- Features -->
+                <div class="col-lg-5">
+                    <h5 class="footer-title mb-4">Pages</h5>
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <ul class="footer-list">
+                                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                                <li><a href="terms-of-use.html">Terms of Service</a></li>
+                                <li><a href="faq.html">FAQ</a></li>
+                                <li><a href="delete-account.html">Delete Account</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul class="footer-list">
+                                <li><a href="index.html#features"><i class="fas fa-globe me-2 text-sky"></i>www.autodaddy.ca</a></li>
+                                <li><a href="index.html#features"><i class="fas fa-envelope me-2 text-sky"></i>info@autodaddy.ca</a></li>
+                                <li><a href="index.html#features"><i class="fas fa-phone-alt me-2 text-sky"></i>+1 705 991 3785</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Content -->
+                <div class="col-lg-4">
+                    <p class="footer-content mb-3">This platform is designed, developed and hosted by <a href="#" class="footer-link">autodaddy</a>. We do not provide repair services.</p>
+                    <div class="footer-icons d-flex flex-wrap gap-3 align-items-center mb-3">
+                        <div class="footer-icon-box" title="Repairs"><i class="fas fa-tools text-sky"></i></div>
+                        <div class="footer-icon-box" title="Towing"><i class="fas fa-truck-pickup text-sky"></i></div>
+                        <div class="footer-icon-box" title="Detailing"><i class="fas fa-spray-can text-sky"></i></div>
+                        <div class="footer-icon-box" title="Deals"><i class="fas fa-tags text-sky"></i></div>
+                    </div>
+                    <p class="footer-copy mb-3">&copy; 2026 autodaddy All rights reserved.</p>
+                </div>
+            </div>
+            <hr class="footer-hr my-1">
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Typing Animation
+        function autoType(Id) {
+            const typingElement = document.getElementById(Id);
+            if (!typingElement) return;
+            const text = typingElement.innerText;
+            typingElement.textContent = '';
+            let index = 0;
+            let isDeleting = false;
+            function type() {
+                if (isDeleting) {
+                    if (index >= 0) {
+                        typingElement.textContent = text.substring(0, index);
+                        index--;
+                        setTimeout(type, 50);
+                    } else {
+                        isDeleting = false;
+                        setTimeout(type, 500);
+                    }
+                } else {
+                    if (index < text.length) {
+                        typingElement.textContent += text.charAt(index);
+                        index++;
+                        setTimeout(type, 100);
+                    } else {
+                        isDeleting = true;
+                        setTimeout(type, 2000);
+                    }
+                }
+            }
+            type();
+        }
+        autoType('HomeLine');
+
+        // Delete account form handling (fake / front-end only)
+        const deleteForm = document.getElementById('deleteAccountForm');
+        const deleteToastEl = document.getElementById('deleteToast');
+        const deleteToast = new bootstrap.Toast(deleteToastEl, { delay: 4000 });
+
+        deleteForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            const emailInput = document.getElementById('deleteEmail');
+            if (!deleteForm.checkValidity()) {
+                deleteForm.classList.add('was-validated');
+                return;
+            }
+
+            // NOTE: This is a placeholder/demo action only.
+            // No request is actually sent to any server here.
+            console.log('Deletion request (demo only) for:', emailInput.value);
+
+            deleteToast.show();
+            deleteForm.reset();
+            deleteForm.classList.remove('was-validated');
+        });
+    </script>
+</body>
+</html>
