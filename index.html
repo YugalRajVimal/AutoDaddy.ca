@@ -29,43 +29,65 @@
             deals...Tow service or Car detailing etc. “A.I - that helps itself</span><i class="fas fa-pencil-alt"></i>
     </div>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-fixed-top" id="mainNav">
-        <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-fixed-top w-100" id="mainNav" style="width: 100vw; left: 0; right: 0;">
+        <div class="container-fluid px-3 px-lg-4">
             <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img src="autodaddy-logo.png" alt="GIS Portal">
+                <img src="autodaddy-logo.png" alt="AutoDaddy Logo" style="max-height: 40px; width: auto;">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-lg-center ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Pages
                         </a>
-                        <ul class="dropdown-menu dropdown-menu-end shadow-sm border-0" aria-labelledby="pagesDropdown"
-                            style="border-radius: 12px; margin-top: 10px;">
-                            <li><a class="dropdown-item py-2" href="privacy-policy.html"><i
-                                        class="fas fa-shield-alt text-sky w-20px me-2 text-center"></i>Privacy
-                                    Policy</a></li>
-                            <li><a class="dropdown-item py-2" href="terms-of-use.html"><i
-                                        class="fas fa-file-contract text-sky w-20px me-2 text-center"></i>Terms of
-                                    Use</a>
+                        <ul class="dropdown-menu dropdown-menu-end shadow-sm border-0"
+                            aria-labelledby="pagesDropdown"
+                            style="border-radius: 12px; margin-top: 10px; min-width: 200px;">
+                            <li>
+                                <a class="dropdown-item py-2 d-flex align-items-center" href="privacy-policy.html">
+                                    <i class="fas fa-shield-alt text-sky w-20px me-2 text-center"></i>
+                                    Privacy Policy
+                                </a>
                             </li>
-                            <li><a class="dropdown-item py-2" href="faq.html"><i
-                                        class="fas fa-question-circle text-sky w-20px me-2 text-center"></i>FAQ</a></li>
-                            <li><a class="dropdown-item py-2" href="contact-us.html"><i
-                                        class="fas fa-envelope text-sky w-20px me-2 text-center"></i>Contact Us</a></li>
+                            <li>
+                                <a class="dropdown-item py-2 d-flex align-items-center" href="terms-of-use.html">
+                                    <i class="fas fa-file-contract text-sky w-20px me-2 text-center"></i>
+                                    Terms of Use
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item py-2 d-flex align-items-center" href="faq.html">
+                                    <i class="fas fa-question-circle text-sky w-20px me-2 text-center"></i>
+                                    FAQ
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item py-2 d-flex align-items-center" href="contact-us.html">
+                                    <i class="fas fa-envelope text-sky w-20px me-2 text-center"></i>
+                                    Contact Us
+                                </a>
+                            </li>
                         </ul>
                     </li>
-                    <!-- <li class="nav-item ms-3">
-                        <a class="btn btn-light text-sky fw-bold btn-sm px-4 rounded-pill shadow-sm" href="#">
+                    <!--
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <a class="btn btn-light text-sky fw-bold btn-sm px-4 rounded-pill shadow-sm d-flex align-items-center"
+                           href="#">
                             <i class="fas fa-sign-in-alt me-2"></i>Login
                         </a>
-                    </li> -->
+                    </li>
+                    -->
                 </ul>
             </div>
         </div>
@@ -264,12 +286,16 @@
     <section id="about" class="py-5">
         <div class="container">
             <div class="row">
-                <div class="col-md-5 text-center" data-aos="fade-right">
-                    <img src="about-banner-new-1.png" alt="AutoDaddy Mobile App" class="img-fluid mb-4"
-                        style="max-width: 400px;">
-                    
+                <div class="col-12 col-md-5 d-flex justify-content-center align-items-center mb-4 mb-md-0 text-center">
+                    <img 
+                        src="about-banner-new-1.png" 
+                        alt="AutoDaddy Mobile App" 
+                        class="img-fluid mb-4"
+                        style="max-width: 100%; width: 100%; max-width: 400px; height: auto;"
+                    >
                 </div>
-                <div class="col-md-7" data-aos="fade-left">
+        
+                <div class="col-md-7">
                      <h2 class="display-7 fw-bold mb-4"><span class="text-gradient">From Trash to Cash:</span> Sell Across Canada!</h2>
                    
                     <p class="lead text-muted mb-4">
@@ -290,11 +316,9 @@
                     <p class="text-muted mb-4">
                       Join the National Network:👉 <span class="text-gradient">autodaddy.ca</span>
                     </p>
-                  
-                  
                 </div>
               
-              <div class="col-md-12" data-aos="fade-left"><p class="text-center m-0" style="font-style: italic;
+              <div class="col-md-12"><p class="text-center m-0" style="font-style: italic;
     font-weight: bold;color: green;">with Autodaddy, you are not just choosing a system - you're choosing a standard of excellence</p></div>
             </div>
 
@@ -304,12 +328,12 @@
     <!-- Platform Capabilities -->
     <section id="capabilities" class="py-5 bg-dark text-white">
         <div class="container">
-            <div class="text-center mb-5" data-aos="fade-up">
+            <div class="text-center mb-5">
                 <h2 class="display-7 fw-bold mb-3">Platform Capabilities</h2>
                 <p class="lead text-white-50">Where Possibilities begin... Connect and Correcte</p>
             </div>
             <div class="row g-4 align-items-center">
-                <div class="col-lg-3 col-md-4 col-6 text-center" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-3 col-md-4 col-6 text-center">
                     <div class="tech-box">
                         <i class="fas fa-file-invoice fa-3x mb-3 text-sky"></i>
                         <h6 class="fw-bold">Digital Service History</h6>
@@ -317,7 +341,7 @@
                             complete service history, including mileage and detailed workshop notes.</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-6 text-center" data-aos="fade-up" data-aos-delay="150">
+                <div class="col-lg-3 col-md-4 col-6 text-center">
                     <div class="tech-box">
                         <i class="fas fa-tags fa-3x mb-3 text-sky"></i>
                         <h6 class="fw-bold">Exclusive Loacal Deals</h6>
@@ -325,7 +349,7 @@
                             from our trusted network of automotive service partners.</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-6 text-center" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-lg-3 col-md-4 col-6 text-center">
                     <div class="tech-box">
                         <i class="fas fa-map-marked-alt fa-3x mb-3 text-sky"></i>
                         <h6 class="fw-bold">Precision Shop Mapping</h6>
@@ -333,7 +357,7 @@
                             centers utilizing our integrated, real-time geolocation mapping system.</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-6 text-center" data-aos="fade-up" data-aos-delay="250">
+                <div class="col-lg-3 col-md-4 col-6 text-center">
                     <div class="tech-box">
                         <i class="fas fa-truck-pickup fa-3x mb-3 text-sky"></i>
                         <h6 class="fw-bold">Access Tow services</h6>
@@ -341,7 +365,7 @@
                             reliable towing services directly to your precise GPS location.</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-6 text-center" data-aos="fade-up" data-aos-delay="300">
+                <div class="col-lg-3 col-md-4 col-6 text-center">
                     <div class="tech-box">
                         <i class="fas fa-soap fa-3x mb-3 text-sky"></i>
                         <h6 class="fw-bold">Access Washing and Detailing Presto</h6>
@@ -349,7 +373,7 @@
                             detailing packages, available with flexible doorstep service options.</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-6 text-center" data-aos="fade-up" data-aos-delay="350">
+                <div class="col-lg-3 col-md-4 col-6 text-center">
                     <div class="tech-box">
                         <i class="fas fa-cog fa-3x mb-3 text-sky"></i>
                         <h6 class="fw-bold">Access Tire deals</h6>
@@ -357,7 +381,7 @@
                             and limited-time offers to make informed purchasing decisions.</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-6 text-center" data-aos="fade-up" data-aos-delay="400">
+                <div class="col-lg-3 col-md-4 col-6 text-center">
                     <div class="tech-box">
                         <i class="fas fa-car-crash fa-3x mb-3 text-sky"></i>
                         <h6 class="fw-bold">Excess Autobody Network</h6>
@@ -365,7 +389,7 @@
                             flawless dent removal, premium paint matching, and collision restoration.</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-6 text-center" data-aos="fade-up" data-aos-delay="450">
+                <div class="col-lg-3 col-md-4 col-6 text-center">
                     <div class="tech-box">
                         <i class="fas fa-file-invoice-dollar fa-3x mb-3 text-sky"></i>
                         <h6 class="fw-bold">Digital Invoicing</h6>
@@ -382,9 +406,16 @@
     <section id="about" class="py-5">
         <div class="container">
             <div class="row">
-                <div class="col-md-5 text-center" data-aos="fade-right">
-                    <img src="about-banner-new.png" alt="AutoDaddy Mobile App" class="img-fluid mb-4"
-                        style="max-width: 400px;">
+                <div class="col-md-5 text-center">
+                    <img 
+                        src="about-banner-new.png" 
+                        alt="AutoDaddy Mobile App" 
+                        class="img-fluid mb-4 w-100"
+                        style="max-width: 400px; height: auto;"
+                        srcset="about-banner-new-400.png 400w, about-banner-new-300.png 300w, about-banner-new.png 800w"
+                        sizes="(max-width: 576px) 90vw, (max-width: 768px) 70vw, 400px"
+                    >
+                  
                     <h5 class="fw-bold mb-3">Download AutoDaddy App</h5>
                     <div class="d-flex justify-content-center gap-3 flex-wrap">
                         <a href="#" class="btn btn-dark btn-lg d-flex align-items-center shadow-sm">
@@ -403,7 +434,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-7" data-aos="fade-left">
+                <div class="col-md-7">
                     <h2 class="display-7 fw-bold mb-4">About Us</h2>
                     <p class="lead text-muted mb-4">
                         Thanks for downloading the app. Auto daddy was created with a simple belief: <b>Your vehicle is
